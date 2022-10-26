@@ -20,7 +20,7 @@ from projects.urls import list_projects
 
 
 def redirect_home(request):
-    return redirect("/projects/")
+    return redirect("projects/")
 
 
 urlpatterns = [
