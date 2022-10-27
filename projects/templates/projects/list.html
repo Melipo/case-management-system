@@ -19,7 +19,8 @@ Tracker
             <tbody>
                 <tr>
                     {% for project in projects %}
-                    <td>{{ project.name }}</td>
+                    <td><a href="{% url 'show_project' project.id %}">{{ project.name }}</a></td>
+                    <td>{{ project.tasks.all|length }}</td>
                     {% endfor %}
                 </tr>
             </tbody>
