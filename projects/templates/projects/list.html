@@ -1,31 +1,32 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Projects
+    Projects
 {% endblock title %}
-
 {% block content %}
-<div>
-    <h1>My Projects</h1>
-    {% if projects %}
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Number of tasks</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for project in projects %}
-            <tr>
-                <td><a href="{% url 'show_project' project.id %}">{{ project.name }}</a></td>
-                <td>{{ project.tasks.all|length }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>"You are not assigned to any projects"</p>
-    {% endif %}
-</div>
+    <div>
+        <h1>My Projects</h1>
+        {% if projects %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of tasks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for project in projects %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'show_project' project.id %}">{{ project.name }}</a>
+                            </td>
+                            <td>{{ project.tasks.all|length }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>"You are not assigned to any projects"</p>
+        {% endif %}
+    </div>
 {% endblock content %}
