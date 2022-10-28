@@ -2,21 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %}</title>
 </head>
-<header>
-    <nav>
-        <a href="{% url 'create_project' %}">Create project</a>
-        <a href="{% url 'create_task' %}">Create a new task</a>
-    </nav>
-</header>
 
 <body>
-    {% block content %}
-    {% endblock content %}
-</body>
+    <header>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'show_my_tasks' %}">My tasks</a>
+                </li>
+                <li>
+                    <a href="{% url 'list_projects' %}">My projects</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% else %}
+    <li>
+        <a href="{% url 'login' %}">Login</a>
+    </li>
+    <li>
+        <a href="{% url 'signup' %}">Signup</a>
+    </li>
+    {% endif %}
+
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
 
 </html>
