@@ -6,14 +6,12 @@ New Task
 
 {% block content %}
 
-<main>
-    <h1>Create a new task</h1>
-    <div>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button>Create</button>
-        </form>
-    </div>
-</main>
+<h1>Create a new task</h1>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Create</button>
+    </form>
+</div>
 {% endblock content %}
