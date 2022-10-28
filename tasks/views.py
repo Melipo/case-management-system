@@ -22,6 +22,6 @@ def create_task(request):
 
 @login_required
 def list_tasks(request):
-    tasks = Task.objects.filter(owner=request.user)
+    tasks = Task.objects.filter(assignee=request.user)
     context = {"tasks": tasks}
-    return render(request, "projects/detail.html", context)
+    return render(request, "tasks/list.html", context)
