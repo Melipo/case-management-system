@@ -32,9 +32,25 @@ ul a {
     font-weight: bold;
 }
 
+ul a:hover {
+    color: rgba(35, 149, 175, 255);
+    text-decoration: none;
+    box-shadow: 10px 5px 5px rgba(175, 175, 175, 255);
+    margin: 15px;
+    background-color: rgba(254, 231, 129, 255);
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
 tr td a {
     color: rgba(254, 231, 129, 255);
     font-weight: bold;
+}
+
+tr td a:hover {
+    color: rgba(35, 149, 175, 255);
+    text-decoration: none;
+    background-color: rgba(254, 231, 129, 255);
 }
 
 table {
@@ -105,10 +121,11 @@ footer p {
 }
 
 .forms {
+    display: inline-grid;
     text-align: left;
     font-size: large;
     color: #0f1f40;
-    background-color: rgba(141, 172, 137, .5);
+    background-color: rgba(141, 172, 137, 0.678);
 }
 
 p {
@@ -140,11 +157,15 @@ div {
 }
 
 .buttons {
+    width: auto;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
     border-radius: 12px;
-    border: 2px solid rgba(141, 172, 137, .5);
+    border: 5px solid #3e8e41;
 }
 
-.button:hover {
-    background-color: rgba(141, 172, 137, .5);
+.buttons:hover {
+    background-color: #3e8e41;
     color: white;
 }

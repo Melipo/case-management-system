@@ -15,7 +15,7 @@ def list_projects(request):
 @login_required
 def show_project(request, id):
     projects = get_object_or_404(Project, id=id)
-    tasklist = Task.objects.filter(assignee=request.user)
+    tasklist = Task.objects.filter(project=id)
     context = {"project_object": projects, "tasklist_object": tasklist}
     return render(request, "projects/detail.html", context)
 
