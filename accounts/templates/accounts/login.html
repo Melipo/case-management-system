@@ -5,8 +5,8 @@ Login
 {% endblock title %}
 {% block content %}
 <div>
-    <h1 class="headings">Login</h1>
-    <form method="post">
+    <h1 class="headings">Please Login to see your projects</h1>
+    <form class="forms" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button class="buttons">Login</button>

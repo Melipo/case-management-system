@@ -12,10 +12,8 @@ My Projects
     <table>
         <thead>
             <tr>
-                <th>Name</th>
+                <th>Case</th>
                 <th>Start date</th>
-                <th>Due date</th>
-                <th>Is completed</th>
                 <th>Assignee</th>
             </tr>
         </thead>
@@ -24,15 +22,13 @@ My Projects
             <tr>
                 <td>{{ task.name }}</td>
                 <td>{{ task.start_date }}</td>
-                <td>{{ task.due_date }}</td>
-                <td>{{ task.is_completed|yesno }}</td>
                 <td>{{ task.assignee }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
     {% else %}
-    <p>"This project has no tasks"</p>
+    <p>"This Case has no Evidence"</p>
     {% endif %}
 </div>
 {% endblock content %}

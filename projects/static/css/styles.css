@@ -17,15 +17,16 @@ body {
 header {
     text-align: center;
     vertical-align: center;
-    border-bottom: solid;
+    border: 5px outset rgba(254, 231, 129, 255);
     margin: 15px;
     padding: 20px;
+    background-color: rgba(68, 68, 68, .6);
 }
 
 ul a {
     color: rgba(254, 231, 129, 255);
     text-decoration: none;
-    box-shadow: 10px 5px 5px rgba(175, 175, 175, 255);
+    box-shadow: 10px 5px 5px wheat;
     margin: 15px;
     background-color: rgba(35, 149, 175, 255);
     padding: 10px 15px;
@@ -61,13 +62,13 @@ table {
 th {
     text-align: center;
     vertical-align: center;
-    border-style: double;
+    border-style: dotted;
     font-size: larger;
+    font-weight: bold;
     border-color: #0f1f40;
     padding: 20px;
     color: rgba(254, 231, 129, 255);
     background-color: rgba(60, 183, 190, 255);
-    box-shadow: 20px 20px 50px rgba(254, 231, 129, 255);
 }
 
 td {
@@ -86,11 +87,8 @@ td {
 
 .headings {
     text-align: center;
-    font-size: larger;
-    line-height: 40px;
     color: rgba(254, 231, 129, 255);
-    font-family: "Times New Roman", Times, serif;
-    font: small-caps bold 24px/1 sans-serif;
+    font: small-caps bold 40px/1 sans-serif;
 }
 
 .footer {
@@ -130,8 +128,9 @@ footer p {
 
 p {
     font-family: "Times New Roman", Times, serif;
-    padding-top: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold;
 }
 
 .project_name {
@@ -144,12 +143,13 @@ p {
 }
 
 .project_description {
+    color: blanchedalmond;
+    width: 35%;
     text-align: left;
-    color: rgba(175, 175, 175, 255);
     font-size: larger;
     font-weight: bold;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    background-color: rgba(48, 48, 48, .5);
+    border: 5px outset rgba(254, 231, 129, 255);
+    background-color: rgba(48, 48, 48, 0.671);
 }
 
 div {
