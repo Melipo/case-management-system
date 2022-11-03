@@ -1,6 +1,6 @@
 html {
     min-height: 100%;
-    background-image: url("https://images.fineartamerica.com/images-medium-large-5/my-i-want-to-believe-minimal-poster-xfiles-chungkong-art.jpg");
+    background-image: url("https://i.redd.it/1o15z9htyc431.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -23,22 +23,21 @@ header {
 }
 
 ul a {
-    color: #0f1f40;
+    color: rgba(254, 231, 129, 255);
     text-decoration: none;
-    box-shadow: 10px 5px 5px rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgba(175, 175, 175, 255);
     margin: 15px;
-    background-color: #8dac89;
+    background-color: rgba(35, 149, 175, 255);
     padding: 10px 15px;
     font-weight: bold;
 }
 
 tr td a {
-    color: #0f1f40;
+    color: rgba(254, 231, 129, 255);
     font-weight: bold;
 }
 
 table {
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,8 +49,9 @@ th {
     font-size: larger;
     border-color: #0f1f40;
     padding: 20px;
-    color: #0f1f40;
-    background-color: rgb(134, 160, 130);
+    color: rgba(254, 231, 129, 255);
+    background-color: rgba(60, 183, 190, 255);
+    box-shadow: 20px 20px 50px rgba(254, 231, 129, 255);
 }
 
 td {
@@ -63,16 +63,16 @@ td {
     vertical-align: center;
     border-style: solid;
     border-color: #0f1f40;
-    color: #0f1f40;
-    background-color: rgba(141, 172, 137);
+    color: rgba(254, 231, 129, 255);
+    background-color: rgba(60, 183, 190, 255);
+    box-shadow: 20px 20px 50px rgba(254, 231, 129, 255);
 }
 
 .headings {
-    padding-top: 130px;
-    text-align: left;
-    font-size: large;
+    text-align: center;
+    font-size: larger;
     line-height: 40px;
-    color: rgb(2, 2, 2);
+    color: rgba(254, 231, 129, 255);
     font-family: "Times New Roman", Times, serif;
     font: small-caps bold 24px/1 sans-serif;
 }
@@ -85,7 +85,7 @@ td {
     border-top-color: rgb(0, 0, 0);
     border-top-style: double;
     border-width: 10px;
-    background-color: rgba(141, 172, 137, .5);
+    background-color: rgba(68, 68, 68, 255);
 }
 
 footer p {
@@ -123,19 +123,20 @@ p {
     text-align: left;
     padding: 0;
     margin: 0;
+    color: rgba(254, 231, 129, 255);
 }
 
 .project_description {
     text-align: left;
-    color: black;
+    color: rgba(175, 175, 175, 255);
     font-size: larger;
     font-weight: bold;
     border: 2px solid rgba(0, 0, 0, 0.5);
-    background-color: rgba(141, 172, 137, .5);
+    background-color: rgba(48, 48, 48, .5);
 }
 
 div {
-    position: sticky;
+    padding-bottom: 150px;
 }
 
 .buttons {
