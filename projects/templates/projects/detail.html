@@ -1,38 +1,38 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    My Projects
+My Projects
 {% endblock title %}
 {% block content %}
-    <div>
-        <h1>{{ project_object.name }}</h1>
-        <p>{{ project_object.description }}</p>
-        <h2>Tasks</h2>
-        {% if tasklist_object %}
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Start date</th>
-                        <th>Due date</th>
-                        <th>Is completed</th>
-                        <th>Assignee</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for task in tasklist_object %}
-                        <tr>
-                            <td>{{ task.name }}</td>
-                            <td>{{ task.start_date }}</td>
-                            <td>{{ task.due_date }}</td>
-                            <td>{{ task.is_completed|yesno }}</td>
-                            <td>{{ task.assignee }}</td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        {% else %}
-            <p>"This project has no tasks"</p>
-        {% endif %}
-    </div>
+<div>
+    <h1 class="project_name">{{ project_object.name }}</h1>
+    <p class="project_description">{{ project_object.description }}</p>
+    <h2 class="headings">Tasks</h2>
+    {% if tasklist_object %}
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Start date</th>
+                <th>Due date</th>
+                <th>Is completed</th>
+                <th>Assignee</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasklist_object %}
+            <tr>
+                <td>{{ task.name }}</td>
+                <td>{{ task.start_date }}</td>
+                <td>{{ task.due_date }}</td>
+                <td>{{ task.is_completed|yesno }}</td>
+                <td>{{ task.assignee }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>"This project has no tasks"</p>
+    {% endif %}
+</div>
 {% endblock content %}
